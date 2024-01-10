@@ -1,0 +1,258 @@
+*body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #161616;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: calibri;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  background-color: #fff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+}
+.menu li a {
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 12px;
+}
+.lang {
+  color: #fff;
+  font-size: medium;
+}
+
+.lang:hover {
+  color: #f5426f;
+  transition: all ease 0.5s;
+}
+.toggle {
+  display: none;
+}
+.active a,
+.menu li a:hover {
+  background-color: #f5426f;
+  color: #fff !important;
+  font-weight: bold;
+  transition: all ease 0.4s;
+}
+
+#contact-form {
+  width: 100%;
+  height: 125vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-form form {
+  display: flex;
+  width: 62%;
+  height: 85vh;
+  background-color: #1a1a1a;
+  box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.contact-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-right {
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  align-items: center;
+}
+.contact-right input[type="submit"] {
+  width: 75%;
+  height: 50px;
+  background-color: #f54265;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  margin: 20px;
+  color: #1b1b1b;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  align-items: right;
+}
+.c-l-heading {
+  font-family: calibri;
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.f-type {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.f-type input {
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #929292;
+  color: #ffffff;
+  margin: 10px 0px;
+}
+.f-type font {
+  color: #bfbfbf;
+  font-size: 22px;
+}
+.f-type input::placeholder {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+.f-name,
+.f-email {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.f-name font,
+.f-email font {
+  color: #bfbfbf;
+  font-size: 22px;
+}
+.f-name input,
+.f-email input {
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #929292;
+  color: #ffffff;
+  margin: 10px 0px;
+}
+.f-email input::placeholder,
+.f-name input::placeholder {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+.f-email input:focus,
+.f-name input:focus {
+  border-bottom: 1px solid #f54265;
+  transition: all ease 0.5s;
+}
+.f-amount {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.f-amount font {
+  color: #bfbfbf;
+  font-size: 22px;
+}
+.f-amount input {
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #929292;
+  color: #ffffff;
+  margin: 10px 0px;
+}
+.f-amount input::placeholder {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+.message font {
+  color: #bfbfbf;
+  font-size: 22px;
+}
+.message {
+  margin: 20px;
+}
+.message input {
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #929292;
+  color: #ffffff;
+  margin: 10px 0px;
+  font-family: "Roboto", sans-serif;
+}
+.contact-right textarea {
+  width: 100% !important;
+  height: 120px !important;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #ebebeb;
+  font-size: 16px;
+}
+.contact-right textarea::placeholder {
+  color: #ebebeb;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+.contact-right input[type="submit"]:hover {
+  color: #4e4e4e;
+  transform: scale(1.04);
+  transition: all ease 0.1s;
+}
+
+.card {
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.para {
+  color: white;
+}
+
+#user-availability-status {
+  color: #f54265;
+}
+
+.dropbox {
+  width: 100%;
+  height: 30px;
+  background-color: #f54265;
+  outline: none;
+  border: none;
+  margin: 0px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}

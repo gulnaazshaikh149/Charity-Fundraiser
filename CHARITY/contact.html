@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARITY</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #161616;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <nav>
+            <img src="logo.png"><a href="#"></a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li class="active"><a href="project.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="login.html">Admin login</a></li>
+            </ul>
+            
+        </nav>
+    </section>
+    <!--contact-form------------------->
+    <!--contact-form------------------->
+    <section id="contact-form">
+        <form action="contact.php" method="POST">
+            <!--left--------------------------------------->
+            <div class="contact-left">
+                <h1 class="c-l-heading">
+                    <font style="border-bottom: 3px solid #f5426f;">Write to us</font>
+                </h1>
+                <!--name-------->
+                <div class="f-name">
+                    <font>Name</font>
+                    <input type="text" name="name" placeholder="Full Name" />
+                </div>
+                <!--email-------->
+                <div class="f-email">
+                    <font>Email</font>
+                    <input type="email" name="email" placeholder="Example@gmail.com" />
+                </div>
+                <!--contact-->
+                <div class="f-email">
+                    <font>Contact no.</font>
+                    <input type="tel" name="number" placeholder="9999999999" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+            <!--right------------------------------------------->
+            <div class="contact-right">
+                <!--message-------->
+                <div class="message">
+                    <font>Message</font>
+                    <textarea name="message" rows="5" cols="20" placeholder="Share your problems with us we're listening"></textarea>
+                </div>
+                <!--submit-btn------------>
+                <button type="submit" value="submit" class="submit">submit</button>
+            </div>
+        
+        </form>
+        </section>
+
+
+
+
+</body>
+
+</html>

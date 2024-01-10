@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARITY</title>
+    <link rel="stylesheet" href="donate2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #161616;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <nav>
+            <img src="logo.png"><a href="#"></a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li class="active"><a href="project.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="login.html">Admin login</a></li>
+            </ul>
+
+        </nav>
+    </section>
+    <section id="contact-form">
+        <form action="donate2.php" method="POST">
+            <div class="contact-left">
+                <h1 class="c-l-heading">
+                    <font style="border-bottom: 3px solid #f5426f;">Donate Now</font>
+                </h1>
+                <br>
+                <div class="f-type">
+                    <font style="border-bottom: 1px solid #f5426f;">Donation Cause</font>
+                    <br>
+                    <select name="type" class="dropbox" required>
+                        <option value="Natural Calamities">Natural Calamities</option>
+                        <option value="Medical Aid">Medical Aid</option>
+                        <option value="NGOs">NGOs</option>
+                        <option value="Education">Education</option>
+                    </select>
+                </div>
+                <br>
+                <div class="f-name">
+                    <font>Name</font>
+                    <input type="text" name="name" placeholder="Full Name" required />
+                </div>
+                <div class="f-email">
+                    <font>Email</font>
+                    <input name="email" type="text" id="username" placeholder="Example@gmail.com"
+                        onBlur="checkAvailability()"><span id="user-availability-status"></span>
+                </div>
+                <div class="f-amount">
+                    <font>contact</font>
+                    <input type="tel" name="number" placeholder="9999999999" pattern="[0-9]{10}" required />
+                </div>
+
+            </div>
+            <div class="contact-right">
+
+                <div class="f-amount">
+                    <font>Donation amount:</font>
+                    <input type="number" name="amount" placeholder="Donation amount:" required />
+                    <br>
+                    <div class="f-amount">
+                        <font>Card number</font>
+                        <input type="number" name="cardnumber" placeholder="9999 9999 9999 9999" pattern="[0-9]{12}"
+                            maxlength="12" required />
+                    </div>
+                    <div class="f-amount">
+                        <font>Name on card</font>
+                        <input type="text" name="cardname" placeholder="Name" required />
+                    </div>
+                    <div class="f-amount">
+                        <font>Expiry</font>
+                        <input type="month" name="Expiry" placeholder="January-2000" pattern="[0-9]{10}" required />
+
+                    </div>
+                    <div class="f-amount">
+                        <font>CVV</font>
+                        <input type="number" name="cvv" title="not valid" placeholder="***" pattern="[0-9]{10}"
+                            maxlength="3" required />
+
+                    </div>
+        </form>
+        </div>
+        <input type="submit" value="submit" class="submit">
+        </div>
+        </form>
+    </section>
+    <script defer>
+        function checkAvailability() {
+            console.log("hi");
+            $.ajax({
+                type: "POST",
+                url: "donate2.php",
+                data: {
+                    type: 1,
+                    username: $("username").val(),
+                },
+                success: function (data) {
+                    $("#user-availability-status").html(data);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

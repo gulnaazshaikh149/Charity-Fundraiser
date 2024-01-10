@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARITY</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <style>
+        body {
+            background-color: #161616;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <nav>
+            <img src="logo.png"><a href="#"></a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li class="active"><a href="project.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="login.html">Admin login</a></li>
+            </ul>
+            
+        </nav>
+    </section>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-data">
+                    <h1></h1>
+                    <p>Your Donation is others inspiration.</p>
+                    <form action="donate.html" method="GET" target="_self">
+                        <button type="submit" class="but">DONATE NOW</button>
+                    </form>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <h1></h1>
+                    <p>Lets make the world a better place.</p>
+                    <form action="donate.html" method="GET" target="_self">
+                        <button type="submit" class="but">DONATE NOW</button>
+                    </form>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <h1></h1>
+                    <p>Give a helping hand to those who need it.</p>
+                    <form action="donate.html" method="GET" target="_self">
+                        <button type="submit" class="but">DONATE NOW</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <button class="arrows prev" onclick="plusslide(-1)">
+            <span><i class="fas fa-angle-left"></i></span>
+        </button>
+        <button class="arrows next" onclick="plusslide(1)">
+            <span><i class="fas fa-angle-right"></i></span>
+        </button>
+    
+        <div class="dots">
+            <span onclick="currentslide(1)"></span>
+            <span onclick="currentslide(2)"></span>
+            <span onclick="currentslide(3)"></span>
+        </div>
+    </div>
+    
+    
+    <script src="project.js"></script>
+    <section id="about">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <h2>Helping others is our <br>motto.</h2>
+            <p>We are a non-profit organization that work with different non-government/
+                non-profit organizations to provide funds in mainly four sectors i.e 
+                natural calamities, medical aid, NGOs and Education. We accept donations in all forms, you 
+                can drop your donation items too at our address. We also support people who need help, just contact us through
+                the given form below.
+            </p> <br>
+            <form action="aboutus.html" method="GET" target="_self">
+                <button type="submit">KNOW MORE</button>
+            </form>
+        </div>
+        <div class="money">
+            <img src="p4.jpg">
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="s-heading">
+            <h1>Services</h1>
+            <p>Here are Some Services Which We Provide.</p>
+        </div>
+        <div class="b-container">
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Medical Aid</div>
+                    <img src="p3.jpg">
+                </div>
+                <div class="s-b-text">
+                    <a href="services.html">A natural disaster is a major adverse event resulting from natural processes of the Earth; examples are floods,
+                        hurricanes,
+                        tornadoes, volcanic eruptions, earthquakes, tsunamis, storms, and other geologic processes. A natural disaster
+                        can cause loss
+                        of life or damage property, and typically leaves some economic damage in its wake, the severity of which depends
+                        on the
+                        affected population's resilience (ability to recover) and also on the infrastructure available.</a>
+                </div>
+            </div>
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Education</div>
+                    <img src="p1.jpg">
+                </div>
+                <div class="s-b-text">
+                    <a href="services.html">Medical aids provide funds to the needy, poor and other people who cannot afford the expenses of medication.
+                        In today's world the average cost for a transplant or a surgery goes upto lakhs of rupees. The purpose of this
+                        fundraiser
+                        is to make this world a better place where facilities are available to everyone irrespective of their
+                        economic status.</a>
+                </div>
+            </div>
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Natural Calamities</div>
+                    <img src="p2.jpg">
+                </div>
+                <div class="s-b-text">
+                    <a href="services.html">Education is a very important factor in the economic development of any country. India since the early days of independence 
+                        has always focused on improving the literacy rate in our country. Even today the government runs many programs to promote 
+                        Primary and Higher Education in India. 
+                        Human Capital and Economic Growth stay hand in hand together, keeping an eye on the development of the country. 
+                        Long back the Indians recognized the importance of human capital. The seventh five-year plan dictates, “Human resources 
+                        development has necessarily to be assigned a key role in any development strategy, particularly in a country with a large 
+                        population”.</a>
+                </div>
+            </div>
+        </div>
+            <form action="services.html" method="GET" target="_self">
+                <button type="submit" class="service-btn">See more</button>
+            </form>
+    </section>
+    <section id="contact-btn">
+        <h1 class="c-b-heading">We Are Ready To Help, Share Your Cause With Us.</h1>
+        <form action="contact.html" method="GET" target="_self">
+            <button type="submit" class="but">Contact us</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul class="list-footer">
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p class="copyrights">&copy; Copyright ©2020  All rights reserved</p>
+    </footer>
+</body>
+</html>
