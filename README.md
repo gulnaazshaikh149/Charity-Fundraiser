@@ -1,5 +1,6 @@
 # Charity-Fundraiser
-
+This project entails a dynamic charity website, facilitating online donations and community engagement for diverse causes.
+It consists of an user side as well as admin side set-up which allows users to safely donate as well as admins to view the donations for every cause simultaneously.
 # Home
 ![image](https://github.com/gulnaazshaikh149/Charity-Fundraiser/assets/88612483/207e5859-d95f-4260-8050-0b28b946567e)
 # About
